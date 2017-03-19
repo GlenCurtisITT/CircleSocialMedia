@@ -1,0 +1,14 @@
+2016-12-16 18:15:56,920 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2016-12-16 18:15:56,961 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:h2:file:./data/circleDB
+2016-12-16 18:15:57,662 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2016-12-16T18:15:57.661Z
+2016-12-16 18:15:58,072 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2016-12-16 18:15:59,152 [INFO] from application in application-akka.actor.default-dispatcher-2 - ApplicationTimer demo: Stopping application at 2016-12-16T18:15:59.151Z after 2s.
+2016-12-16 18:15:59,156 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2016-12-16 18:15:59,271 [INFO] from application in application-akka.actor.default-dispatcher-2 - Creating Pool for datasource 'default'
+2016-12-16 18:15:59,276 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-2 - Database [default] connected at jdbc:h2:file:./data/circleDB
+2016-12-16 18:15:59,316 [INFO] from application in application-akka.actor.default-dispatcher-2 - ApplicationTimer demo: Starting application at 2016-12-16T18:15:59.316Z
+2016-12-16 18:15:59,391 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
+2016-12-16 18:16:49,815 [WARN] from play in application-akka.actor.default-dispatcher-22 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2016-12-16 18:16:54,487 [WARN] from play in application-akka.actor.default-dispatcher-30 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2016-12-16 18:17:03,735 [INFO] from application in pool-5-thread-4 - ApplicationTimer demo: Stopping application at 2016-12-16T18:17:03.735Z after 64s.
+2016-12-16 18:17:03,736 [INFO] from application in pool-5-thread-4 - Shutting down connection pool.

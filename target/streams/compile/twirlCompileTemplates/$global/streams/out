@@ -1,0 +1,4 @@
+[error] C:\Users\Glen\Desktop\WebDevCa\app\views\signup.scala.html:15: Expected '}' but found '@'
+[error]           <p class="alert alert-warning">No @ symbol found in Email.</p>
+[error]                                             ^
+[error] (compile:twirlCompileTemplates) Twirl compilation failed

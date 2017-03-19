@@ -1,0 +1,21 @@
+@import helper._
+@(addUserForm: Form[models.users.User])
+
+@main("Circle - Update", null, null){
+  <div class="col-xs-12">
+    <div class="well">
+      <h3 class="whiteText">Update Account</h3>
+      <div class="panel panel-primary">
+      @form(action = routes.HomeController.updateUserSubmit(), 'class -> "panel-body", 'role -> "form"){
+        @inputText(addUserForm("name"), '_label -> "Name", 'class -> "form-control")
+        @inputText(addUserForm("email"), '_label -> "", 'hidden -> "hidden")
+        @inputPassword(addUserForm("password"), '_label -> "Password", 'class -> "form-control")
+        <div class="actions">
+          <input type="submit" value="Update" class="btn btn-primary" id="orangeButton">
+          <a href="@routes.HomeController.profile()" class="btn btn-warning">Cancel</a>
+        </div>
+      }
+      </div>
+    </div>
+  </div>
+}

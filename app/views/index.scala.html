@@ -1,0 +1,47 @@
+@(user: models.users.User, account:models.users.Account)
+    @main("Circle - Home", user, account) {
+        @if(flash.containsKey("created")){
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-center" id="orangeText">User has been created. Please login to see your account.</h2>
+                </div>
+            </div>
+        }
+        @if(flash.containsKey("logout")){
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-center" id="orangeText">You have been successfully logged out.</h2>
+                </div>
+            </div>
+        }
+        @if(flash.containsKey("deleted")){
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-center" id="orangeText">Account successfully deleted.</h2>
+                </div>
+            </div>
+        }
+        <div class="row">
+            <div class="col-xs-12">
+                    <img src="@routes.Assets.versioned("images/circleLogo.png")" alt="Circle Logo" class="img-responsive center-block"/>
+                <div id="circleText">
+                    <p>The innovative new social media.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">
+            </div>
+            @if(user == null){
+                <div class="col-xs-6" id="marginTop">
+                    <a class="btn btn-primary center-block" id="orangeButton" href="@routes.HomeController.signup()">Sign-up to Circle</a>
+                </div>
+            }else{
+                <div class="col-xs-6" id="marginTop">
+                    <a class="btn btn-primary center-block" id="orangeButton" href="@routes.HomeController.profile()">Go to profile</a>
+                </div>
+            }
+            <div class="col-xs-3">
+            </div>
+        </div>
+    }

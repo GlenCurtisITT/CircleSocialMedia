@@ -1,0 +1,22 @@
+@(user: models.users.User, account:models.users.Account)
+@main("Circle - About", user, account) {
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="well">
+                <h2 class="orangeText">About Circle.</h2>
+                <p class="orangeText">Circle was created as part of a student project in ITT Dublin. This project was part of the Web Design and Development
+                class and was our 2nd Continuous Assessment. The students listed below are the people who created this website. We are overall very happy on
+                how the site turned out and we are looking forward to adding more functionality in the future. All images used on this site are covered under
+                the fair use agreement and any images used on profile pages link to there respected websites where they are hosted. This site will never be used
+                for commercial gains.</p>
+                <h2 class="orangeText">X00101556 - Glen Curtis</h2>
+                <h2 class="orangeText">X00131787 - Glen Connolly</h2>
+                <h2 class="orangeText">X00128242 - Evan Conlon</h2>
+                <a href="http://www.it-tallaght.ie/">ITT Dublin Website</a>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <img src="@routes.Assets.versioned("images/circleLogo.png")" alt="Circle Logo" class="img-responsive"/>
+        </div>
+    </div>
+}

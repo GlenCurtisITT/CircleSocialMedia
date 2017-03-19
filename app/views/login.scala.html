@@ -1,0 +1,44 @@
+@(loginForm: Form[models.users.Login])
+
+@import helper._
+
+@main("Circle - Login", null, null) {
+  <div class="row">
+    <div class="col-xs-6">
+      <h3>Sign in</h3>
+      @if(loginForm.hasGlobalErrors){
+        <p class="alert alert-warning">
+        @loginForm.globalError.message
+        </p>
+      }
+      @if(flash.containsKey("error")){
+        <div class="alert alert-warning">
+        @flash.get("loginRequired")
+        </div>
+      }
+      <div class="well">
+        <h3 class="whiteText">Sign In</h3>
+      @helper.form(action = controllers.routes.LoginController.loginSubmit()){
+        <div class="form-group">
+        @inputText(loginForm("email"), '_label -> "",
+          'class -> "form-control input-xs", 'placeholder -> "Email")
+        </div>
+        <div class="form-group">
+        @inputPassword(loginForm("password"), '_label -> "",
+          'class -> "form-control input-xs", 'placeholder -> "Password")
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Sign In" class="btn btn-primary" id="orangeButton">
+        </div>
+      </div>
+      }
+    </div>
+
+    <div class="col-xs-6">
+      <img src="@routes.Assets.versioned("images/like.png")" alt="Thanks for stopping by." class="img-responsive"/>
+      <div id="circleText">
+        <p>Thanks for stopping by!</p>
+      </div>
+    </div>
+  </div>
+}

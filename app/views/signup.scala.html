@@ -1,0 +1,36 @@
+@import helper._
+@(addUserForm: Form[models.users.User])
+
+  @main("Circle - SignUp", null, null){
+    @if(flash.containsKey("emailExists")){
+      <div class="row">
+        <div class="col-xs-12">
+          <p class="alert alert-warning">Email already exists.</p>
+        </div>
+      </div>
+    }
+    @if(flash.containsKey("noAtSymbol")){
+      <div class="row">
+        <div class="col-xs-12">
+          <p class="alert alert-warning">No @@ symbol found in Email.</p>
+        </div>
+      </div>
+    }
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="well">
+        <h3 class="whiteText">Sign Up</h3>
+        <div class="panel panel-primary">
+        @form(action = routes.HomeController.addUserSubmit(), 'class -> "panel-body", 'role -> "form"){
+          @inputText(addUserForm("name"), '_label -> "Name", 'class -> "form-control")
+          @inputText(addUserForm("email"), '_label -> "Email", 'class -> "form-control")
+          @inputPassword(addUserForm("password"), '_label -> "Password", 'class -> "form-control")
+          <div class="actions">
+            <input type="submit" value="Signup" class="btn btn-primary" id="orangeButton">
+          </div>
+        }
+        </div>
+      </div>
+    </div>
+  </div>
+  }

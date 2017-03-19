@@ -1,0 +1,234 @@
+/*
+Code snippet by maridlcrmn for Bootsnipp.com
+Follow me on Twitter @maridlcrmn
+*/
+
+.navbar-brand { position: relative; z-index: 2; }
+
+.navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; transition: transform 0.3s; }
+
+.navbar .navbar-collapse { position: relative; overflow: hidden !important; }
+.navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
+
+.navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
+.navbar.navbar-default .nav-collapse { background-color: #262626; }
+.navbar.navbar-inverse .nav-collapse { background-color: #262626; }
+.navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
+.nav-collapse>li { float: right; }
+
+.btn.btn-circle { border-radius: 50px; }
+.btn.btn-outline { background-color: transparent; }
+
+.navbar-nav.navbar-right .btn:not(.collapsed) {
+    background-color: rgb(111, 84, 153);
+    border-color: rgb(111, 84, 153);
+    color: rgb(255, 255, 255);
+}
+
+.navbar.navbar-default .nav-collapse,
+.navbar.navbar-inverse .nav-collapse {
+    height: auto !important;
+    transition: transform 0.3s;
+    transform: translate(0px,-50px);
+}
+.navbar.navbar-default .nav-collapse.in,
+.navbar.navbar-inverse .nav-collapse.in {
+    transform: translate(0px,0px);
+}
+
+body{
+    background-color: #333333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-default{
+    background-color:#262626;
+    border:none;
+    border-bottom:1px solid #D65016;
+}
+
+.navbar-default .navbar-brand{
+    color:#D65016;
+    font-size:2.5em;
+    font-family: 'Montserrat', cursive;
+    transition: 0.2s;
+}
+
+.navbar-default .navbar-brand:hover{
+    color:#a74216;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color:#D65016;
+}
+
+.navbar-default .navbar-nav > li:hover > a:hover {
+    color:white;
+}
+
+.navbar-nav.navbar-right .btn:not(.collapsed){
+    background-color:#D65016;
+    border-color:#D65016;
+}
+
+.btn-success{
+    background-color:#D65016;
+    border-color: #D65016;
+}
+
+.btn-circle{
+    border-color:#D65016;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+    color:#D65016;
+    border-color:#D65016;
+}
+
+.btn-info{
+    background-color: #D65016;
+    border-color: #D65016;
+}
+
+.well{
+    background-color:#262626;
+    border-color:#262626;
+}
+
+.well h1{
+    color:white;
+}
+
+#circleText{
+    color:#D65016;
+    text-align: center;
+    font-size:2em;
+}
+
+#circleText p{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#circleLogo{
+    width:500px;
+    height:480px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#circleLogo img{
+    width:500px;
+    height:480px;
+}
+
+.col-md-12{
+    background-color:#262626;
+}
+
+#table1{
+    background-color:white;
+}
+
+.whiteText{
+    color:white;
+}
+
+#footerContainer {
+    position: fixed;
+    bottom: 0px;
+    width:100%;
+    height: 50px;
+    background-color: #262626;
+    border-top:1px solid #D65016;
+}
+#footerContainer a{
+    color:#D65016;
+    text-decoration: none;
+    position: relative;
+    width:200px;
+    top:15px;
+}
+
+#footerContainer a:hover{
+    text-decoration: underline;
+}
+
+#marginBottom{
+    margin-bottom: 5em;
+}
+
+#marginTop{
+    margin-top: 2em;
+}
+
+#orangeButton{
+    background-color:#D65016;
+    border-color: #c94e19;
+    transition:0.2s;
+}
+
+#orangeButton:hover{
+    background-color:#a74216;
+}
+
+#orangeText{
+    color:#D65016;
+}
+
+.orangeText{
+    color:#D65016;
+}
+
+@media screen and (max-width: 990px){
+    #circleLogo{
+        width:100%;
+        height:100%;
+    }
+
+    .orangeText{
+        font-size:1.5em;
+    }
+
+    #circleLogo img{
+        width:100%;
+        height:100%;
+    }
+}
+
+@media screen and (max-width: 560px){
+
+    #footerContainer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 15px; padding-right: 15px; }
+
+    .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
+    .navbar .nav-collapse .navbar-form { margin: 0; }
+    .nav-collapse>li { float: none; }
+
+    .navbar.navbar-default .nav-collapse,
+    .navbar.navbar-inverse .nav-collapse {
+        transform: translate(-100%,0px);
+    }
+    .navbar.navbar-default .nav-collapse.in,
+    .navbar.navbar-inverse .nav-collapse.in {
+        transform: translate(0px,0px);
+    }
+
+    .navbar.navbar-default .nav-collapse.slide-down,
+    .navbar.navbar-inverse .nav-collapse.slide-down {
+        transform: translate(0px,-100%);
+    }
+    .navbar.navbar-default .nav-collapse.in.slide-down,
+    .navbar.navbar-inverse .nav-collapse.in.slide-down {
+        transform: translate(0px,0px);
+    }
+
+    #footerContainer {
+        text-align: center;
+    }
+}

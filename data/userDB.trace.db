@@ -1,0 +1,9 @@
+2016-12-04 15:11:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+SELECT * FROM USER [42102-192]
+2016-12-04 15:11:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USERS" not found; SQL statement:
+SELECT * FROM USERS [42102-192]
+2016-12-04 15:13:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT * FROM INFORMATION_SCHEMA.USERS INFORMATION_SCHEMA.[*]VIEWS"; SQL statement:
+SELECT * FROM INFORMATION_SCHEMA.USERS INFORMATION_SCHEMA.VIEWS [42000-192]

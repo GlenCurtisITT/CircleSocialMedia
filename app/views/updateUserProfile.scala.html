@@ -1,0 +1,22 @@
+@import helper._
+@(accountForm: Form[models.users.Account])
+
+@main("Circle - Update Profile", null, null){
+  <div class="col-xs-12">
+    <div class="well">
+      <h3 class="whiteText">Update Profile</h3>
+      <div class="panel panel-primary">
+      @form(action = routes.HomeController.updateUserProfileSubmit(), 'class -> "panel-body", 'role -> "form"){
+        @inputText(accountForm("account_id"), '_label -> "", 'hidden -> "hidden")
+        @inputText(accountForm("aboutMe"), '_label -> "About", 'class -> "form-control")
+        @inputText(accountForm("profilePicture"), '_label -> "Profile Picture (URL)", 'class -> "form-control")
+        @inputText(accountForm("coverPhoto"), '_label -> "Cover Photo (URL)", 'class -> "form-control")
+        <div class="actions">
+          <input type="submit" value="Update" class="btn btn-primary" id="orangeButton">
+          <a href="@routes.HomeController.profile()" class="btn btn-warning">Cancel</a>
+        </div>
+      }
+      </div>
+    </div>
+  </div>
+}

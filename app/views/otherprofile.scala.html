@@ -1,0 +1,21 @@
+@(account: models.users.Account, user: models.users.User)
+
+@main("Circle - Other Profile", user, account){
+
+    <div class="row">
+        <div class="col-xs-4">
+            <div class="well">
+                <h2 class="whiteText">@user.getName</h2>
+                <img class="img-responsive" src="@account.getProfilePicture" alt="Profile Picture"/>
+                <h2 class="whiteText">About Me</h2>
+                <p class="whiteText">@account.getAboutMe</p>
+            </div>
+        </div>
+        <div class="col-xs-8">
+            <div class="well">
+                <h2 class="whiteText">Cover Photo</h2>
+                <img class="img-responsive" src="@account.getCoverPhoto" alt="Cover Photo"/>
+            </div>
+        </div>
+    </div>
+}

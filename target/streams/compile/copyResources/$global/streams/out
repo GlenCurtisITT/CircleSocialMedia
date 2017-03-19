@@ -1,0 +1,8 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Glen\Desktop\New folder\webca2part2\conf\application.conf,C:\Users\Glen\Desktop\New folder\webca2part2\target\scala-2.11\classes\application.conf)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Glen\Desktop\New folder\webca2part2\conf\evolutions,C:\Users\Glen\Desktop\New folder\webca2part2\target\scala-2.11\classes\evolutions)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Glen\Desktop\New folder\webca2part2\conf\logback.xml,C:\Users\Glen\Desktop\New folder\webca2part2\target\scala-2.11\classes\logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Glen\Desktop\New folder\webca2part2\conf\routes,C:\Users\Glen\Desktop\New folder\webca2part2\target\scala-2.11\classes\routes)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Glen\Desktop\New folder\webca2part2\conf\evolutions\default,C:\Users\Glen\Desktop\New folder\webca2part2\target\scala-2.11\classes\evolutions\default)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Glen\Desktop\New folder\webca2part2\conf\evolutions\default\1.sql,C:\Users\Glen\Desktop\New folder\webca2part2\target\scala-2.11\classes\evolutions\default\1.sql)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Glen\Desktop\New folder\webca2part2\conf\evolutions\default\2.sql,C:\Users\Glen\Desktop\New folder\webca2part2\target\scala-2.11\classes\evolutions\default\2.sql)[0m

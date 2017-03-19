@@ -1,0 +1,24 @@
+@(user: List[models.users.User], account: List[models.users.Account])
+
+  @main("Circle - Search", null, null) {
+    <div class="col-xs-12">
+      <table class="table table-bordered table-hover table-condensed" id="table1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+        @for(u <- user) {
+          <tr>
+            <td>@u.getName</td>
+            <td>@u.getEmail</td>
+            <td><a href="@routes.HomeController.otherProfileGenerate(u.getEmail)" id="orangeText">Profile Page</a></td>
+        }
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  }
